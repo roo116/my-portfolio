@@ -2,6 +2,9 @@
   margin: 0;
 }
 
+.card {
+  height: 100%;
+}
 /* HEADER / NAV BAR STYLES START */
 
 /* header {
@@ -16,5 +19,3 @@
 } */
 
 /* HEADER / NAVBAR STYLES END */
-
-
