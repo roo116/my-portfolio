@@ -1,21 +1,60 @@
 * {
   margin: 0;
+  font-family: "Amatic SC", cursive;
 }
+
+body {
+  background-image: url("../img/profile2.bw.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+h1 {
+  /* border: solid black; */
+  flex: 1;
+  margin: 12px 24px;
+  padding: 3px;
+  font-size: 60px;
+  /* height: 100px; */
+}
+
+nav {
+  padding: 12px 24px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-size: 16px;
+  margin: 0;
+}
+/*   
+  .jumbotron {
+    background-image: url('../img/profile2.bw.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100rem;
+    height: 90vh;
+} */
 
 .card {
   height: 100%;
 }
+
 /* HEADER / NAV BAR STYLES START */
 
-/* header {
-  background-image: url("../img/profile2.bw.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 80%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-} */
+header {
+  background-color: rgba(255, 255, 255, 0.7);
+}
 
 /* HEADER / NAVBAR STYLES END */
