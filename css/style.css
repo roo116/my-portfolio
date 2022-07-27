@@ -3,6 +3,10 @@
   font-family: "Amatic SC", cursive;
 }
 
+header {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 body {
   background-image: url("../img/profile2.bw.jpg");
   background-position: bottom;
@@ -31,6 +35,10 @@ nav {
   padding: 12px 24px;
 }
 
+nav li {
+  font-size: 40px;
+}
+
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -38,7 +46,19 @@ nav {
   font-size: 16px;
   margin: 0;
 }
-/*   
+
+#about-me {
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-weight: bold;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+/*  
+
+
   .jumbotron {
     background-image: url('../img/profile2.bw.jpg');
     background-repeat: no-repeat;
@@ -51,10 +71,12 @@ nav {
   height: 100%;
 }
 
+/* .card-text {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
 /* HEADER / NAV BAR STYLES START */
 
-header {
-  background-color: rgba(255, 255, 255, 0.7);
-}
+
 
 /* HEADER / NAVBAR STYLES END */
