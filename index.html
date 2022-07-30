@@ -10,75 +10,99 @@
       href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
-
-    <link
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Chip Hill</title>
-  </head>
+  </head> 
 
   <body>
-    <header class="parent">
-      <h1 class="child fw-bold">Chip Hill</h1>
-      <nav class="child">
+    <header class="">
+      <h1 class="fw-bold">Chip Hill</h1>
+      
+      <nav class="">
         <ul class="container" style="list-style-type: none">
-          <li class="text-center grand-child">
-            <a
+
+          <li class="text-center m-2">
+            <button id="work">My Work</button>
+          </li>
+         
+          <li class="text-center m-2">
+            <button id="about">About Me</button>
+          </li>
+
+          <li class="text-center m-2">
+            <button><a
               href="https://linkedin.com/in/karlhill"
               class="m-2 p-1 text-dark"
-              style="text-decoration: none"
-              >LinkedIn</a
-            >
+              style="text-decoration: none" target="_blank"
+              >LinkedIn</a></button>
           </li>
-          <li class="text-center grand-child">
-            <a
-              class="m-2 p-1 text-dark"
-              style="text-decoration: none"
+          <li class="text-center m-2">
+           <button><a class="m-2 p-1 text-dark"
+              style="text-decoration: none" target="_blank"
               href="https://github.com/roo116"
-              >GitHub</a
-            >
+              >GitHub</a></button>
           </li>
-          <li class="text-center grand-child">
-            <a
+          <li class="text-center m-2">
+           <button><a
               class="m-2 p-1 text-dark"
               style="text-decoration: none"
-              href="https://hillkarl03@gmail.com"
+              href="mailto:hillkarl03@gmail.com"
               >Email</a
-            >
+            ></button>
           </li>
         </ul>
       </nav>
     </header>
 
-    <div
-      class="d-flex p-2 flex-column flex-sm-row justify-content-center col-12"
-    >
-      <!-- <h2 class="fs-1 text-center m-5 p-1 text-light">About Me</h2> -->
+    <section>
+    <div class="d-flex p-2 flex-column flex-sm-row justify-content-center col-12">
       <p id="about-me" class="text-center m-5">
-        Leveraging my IT background to build web applications and grow as a
-        developer.Skills include JavaScript, CSS, responsive web design, Node.js, Express, mySql. 
-        Known as an innovative problem solver with a "no-quit clause", I seek to increase my
+        Seeking to build web applications and grow as a
+        developer.  
+        <br>
+        Skills include - JavaScript, CSS, JQuery, responsive web design, Node.js, Express, mySql.
+        <br> 
+        I work under a "no-quit clause", and I solve problems.  I seek to increase my
         understanding and pursue mastery of web development while providing
         services to local companies.
       </p>
     </div>
+  </section>
 
-    <div class="">
-      <!-- <div
-        class="d-flex p-2 flex-column flex-md-row justify-content-center col-12"
-      > -->
-        <h2 id="work" class="fs-1 text-center m-5 text-light fw-bolder">My Work</h2>
+    <div class="work-section">
 
         <div class="row justify-content-around">
-          <!-- <div class="card-group"> -->
+
+
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+              <div class="card zoom">
+                <img
+                  src="https://lh3.googleusercontent.com/n-Bc08_UoiY0-m8tfWflWFDPVOtIjRXBqw6vWd7DSNlQAeIm-EG9a_hW83gI4WnZa80ILIFzwhRAI1TwkwrHj6-xLmv1IOcjJobGfxecinwBkemWpU539LqZfG2FaadedUuaHVKgj7sL7-7yyYAFyA"
+                  class="card-img-top shadow-lg p-3 mb-5 bg-body"
+                  alt="website"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">jokr</h5>
+                  <p class="card-text">
+                    Team collaboration utilizing MVC, with sequelize, mySql, JawsDB/Heroku, express, node.js, handlebars.
+                  </p>
+                  <a
+                    href="https://damp-bastion-89209.herokuapp.com/"
+                    class="card-link"
+                    target="_blank"
+                    >Link</a
+                  >
+                </div>
+              </div>
+            </div>
 
           <div class="col-12 col-sm-6 col-lg-3 mb-4">
-            <div class="card">
+            <div class="card zoom">
               <img
                 src="./img/note-taker.png"
                 class="card-img-top shadow-lg p-3 mb-5 bg-body"
@@ -209,7 +233,7 @@
                   href="https://roo116.github.io/robot-gladiators/"
                   class="card-link"
                   target="_blank"
-                  >LinkL</a
+                  >Link</a
                 >
               </div>
             </div>
@@ -217,5 +241,8 @@
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
   </body>
 </html>
