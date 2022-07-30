@@ -12,5 +12,5 @@ $("#about").click(function () {
 
 $("#work").click(function () {
   $("#about-me").hide();
-  $(".work-section").toggle("slow");
+  $(".work-section").toggle("fast");
 });
