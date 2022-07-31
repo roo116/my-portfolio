@@ -5,7 +5,8 @@ $(document).ready(function () {
 });
 
 $("#about").click(function () {
-  $("#about-me").toggle("slow");
+  $(".work-section").hide();
+  $("#about-me").toggle("fast");
 });
 
 

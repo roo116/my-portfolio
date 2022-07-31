@@ -47,6 +47,9 @@ button {
   border: solid black;
 }
 
+.work-section{
+  margin: 5px;
+}
 .card {
   height: 100%;
   transition: transform .1s;
