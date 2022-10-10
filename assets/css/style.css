@@ -1,6 +1,7 @@
-main {
-  margin: 0 auto;
-  display: block;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,23 +11,26 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  color: var(--light);
+  color: white;
   background-image: url("../img/porfolio-bw.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-family: "Courier New", Courier, monospace;
-  max-height: 100px;
+  /* max-height: 100px; */
 }
+
+/* main {
+  height: 100%;
+} */
 
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  border: black solid 2px;
-  background-color: white;
+  background-color: none;
   font-family: "Peralta", cursive;
 }
 
@@ -37,12 +41,22 @@ header h1 {
 }
 
 footer {
-  background-color: white;
-  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   bottom: 0;
-  position: sticky;
   width: 100%;
 }
+
+/* footer {
+  background: var(--primary-color);
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+} */
 
 ul {
   list-style: none;
@@ -56,22 +70,34 @@ ul {
   width: 50vw;
 }
 
-.nav-button {
+/* .nav-button {
   background-color: white;
   border: none;
 }
 
 .nav-button:hover {
   color: skyblue;
-}
+} */
 
 .nav-item {
   margin-left: 2%;
   margin-right: 2%;
+  text-decoration: none;
+  color: white;
 }
 
 .card {
   margin: 5px;
+  width: 20rem;
+}
+
+.card-body {
+  height: 50%;
+  border-top: black solid 2px;
+}
+
+.card-img-top {
+  width: 100%;
 }
 
 .form-input {
@@ -92,23 +118,38 @@ ul {
 }
 
 #about-section {
-  background-color: white;
+  height: 100vh;
 }
 
-#about-section h1 {
+#about-section h1,
+h2 {
   font-family: "Peralta", cursive;
+}
+
+#about-me-section {
+  background-color: white;
+  color: black;
+  font-family: 'Fresca', sans-serif;
+  font-size: small;
+}
+
+#photo-section {
+  width: 100%;
+  align-content: center;
 }
 
 #photo {
   border-radius: 50%;
-  height: 100%;
+  z-index: 999;
+  border: white solid 5px;
+  width: 150px;
+  margin-bottom: -7px;
 }
 
 #contact-section {
-  background-color: white;
-  margin-top: 55px;
+  /* background-color: white; */
+  margin-top: 2%;
 }
-
 
 #contact-button {
   align-items: center;
@@ -118,7 +159,11 @@ ul {
   border-width: 1px;
 }
 
-#resume-section {
+#project-section {
+  margin-bottom: 10%;
+}
+
+/* #resume-section {
   text-align: center;
   width: 20rem;
   text-decoration: none;
@@ -126,13 +171,27 @@ ul {
   background: white;
   text-align: center;
   text-decoration: none;
+  height: 100vh;
+  color: black;
+} */
+
+@media screen and (min-width: 768px) {
+  header {
+    justify-content: flex-start;
+  }
+
+  #about-me-section {
+    font-size: medium;
+  }
+  
 }
 
-@media screen and (min-height: 580px) {
-  footer {
-    position: absolute;
+@media screen and (min-width: 2880px) {
+   .nav {
+    width: 25%;
   }
 }
+
 /* .box-1{
   width: 25%;
 }
