@@ -196,8 +196,9 @@ ul {
   }
 
   .card {
-    width: 30%;
-    margin: 15px;
+    /* margin: 15px; */
+    margin: 3rem;
+    width: 26rem;
   }
 
   .proj-container {
@@ -211,7 +212,9 @@ ul {
   }
 
   #about-me-section {
-    font-size: 25px;
+    font-size: 15px;
+    width: 80vw;
+    margin: auto;
   }
 
   #project-section h2 {
@@ -237,18 +240,23 @@ ul {
     width: 25%;
   }
 
-  .card {
-    width: 30%;
-  }
-
   .proj-container {
     width: 100%;
     padding: 40px;
-    height: 80vh;
+    height: 40vh;
+  }
+
+  .card {
+    width: 20rem;
   }
 
   #about-section {
-    padding-top: 220px;
+    padding-top: 8%;
+  }
+
+  #about-me-section {
+    width: 60%;
+    font-size: 25px;
   }
 
   #project-section h2 {
