@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     />
+    <script
+      src="https://kit.fontawesome.com/98b873008c.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
     <title>Chip Hill</title>
@@ -24,19 +28,15 @@
       <h1>Chip Hill</h1>
       <ul class="nav">
         <li class="text-center m-2">
-          <!-- <button id="about-btn" class="nav-button">About Me</button> -->
           <a href="#about-section" class="nav-item">About</a>
         </li>
         <li class="text-center m-2">
-          <!-- <button id="project-btn" class="nav-button">Projects</button> -->
           <a href="#project-section" class="nav-item">Projects</a>
         </li>
         <li id="contact" class="text-center m-2">
-          <!-- <button id="contact-btn" class="nav-button"><a href="#about">Contact</a></button> -->
           <a href="#contact-section" class="nav-item">Contact</a>
         </li>
         <li class="text-center m-2">
-          <!-- <button id="resume-btn" class="nav-button">Resume</button> -->
           <a
             href="https://docs.google.com/document/d/e/2PACX-1vTzFpiPtLClTnhZyYY-DKrNH-FZ9fWSdl4YhFe45V8oK05tW8-066KhcwXtD9mTzAVRF-p9l7lfjSH7/pub"
             class="nav-item"
@@ -48,235 +48,186 @@
       </ul>
     </header>
 
-    <main>
-      <section id="about-section">
-        <div id="photo-section">
-          <center>
-            <img
-              src="./assets/img/profile-pic-color.jpeg"
-              id="photo"
-              alt="developer"
-            />
-          </center>
-        </div>
+    <section id="about-section">
+      <div id="photo-section">
+        <center>
+          <img
+            src="./assets/img/profile-pic-color.jpeg"
+            id="photo"
+            alt="developer"
+          />
+        </center>
+      </div>
 
-        <div
-          id="about-me-section"
-          class="d-flex col flex-wrap justify-content-center align-content-center"
-        >
-          <h1 id="about">About Me</h1>
-          <div class="flex-row space-around about-div">
-            <div class="mx-5">
-              <center>
-                <p id="about-text">
-                  Hi!. I'm a Web Developer with a background in Agile, IT
-                  Operations, Staff Management and Process Improvement. I have
-                  proven technical and leadership abilities and excellent
-                  communication skills, written and verbal. I'm comfortable working in both
-                  independent and team settings. I seek to leverage my
-                  skills and background to create and design web applications,
-                  and further my journey as a developer, while helping companies
-                  achieve their goals.
-                </p>
-              </center>
-              <center><h2>Skills</h2></center>
-              <center>
-                <p>
-                  HTML, CSS, JavaScript, JQuery, HandleBars, React, Node,
-                  Express, REST APIs, MySQL, Sequelize, MongoDB, mongoose,
-                  GraphQL, Scrum (CSM), SaFE, Leadership
-                </p>
-              </center>
-            </div>
+      <div
+        id="about-me-section"
+        class="d-flex col flex-wrap justify-content-center align-content-center"
+      >
+        <h1 id="about">About Me</h1>
+        <div class="flex-row space-around about-div">
+          <div class="mx-5">
+            <center>
+              <p id="about-text">
+                Hi! I'm a Web Developer with a background in Agile, IT
+                Operations, Staff Management and Process Improvement. I have
+                proven technical and leadership abilities and excellent
+                communication skills, written and verbal. I'm comfortable
+                working in both independent and team settings. I seek to
+                leverage my skills and background to create and design web
+                applications, and further my journey as a developer, while
+                helping companies achieve their goals.
+              </p>
+            </center>
+            <center><h2>Skills</h2></center>
+            <center>
+              <p>
+                HTML, CSS, JavaScript, JQuery, HandleBars, React, Node, Express,
+                REST APIs, MySQL, Sequelize, MongoDB, mongoose, GraphQL, Scrum
+                (CSM), SaFE, Leadership
+              </p>
+            </center>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- <section id="contact-section">
-        <form id="contact" class="form-input">
-          <h2>Contact me</h2>
-          <label for="name">Your Name</label>
-          <input
-            type="text"
-            placeholder="Your Name"
-            id="name"
-            name="name"
-            class="form-input"
-          />
-          <label for="email">Your Email</label>
-          <input
-            type="email"
-            placeholder="Email Address"
-            id="email"
-            name="email"
-            class="form-input"
-          />
-          <label for="message">Message</label>
-          <textarea
-            name="message"
-            placeholder="Message"
-            class="form-input"
-            rows="5"
-          ></textarea>
-          <button id="contact-button" type="submit">Submit</button>
-        </form>
-      </section> -->
-
-      <section id="project-section" class="mx-auto">
-        <div class="d-flex flex-wrap justify-content-center">
-          <div class="card">
+    <section id="project-section">
+      <center><h2>Here are some of my projects</h2></center>
+      <div class="proj-container">
+        <div class="card">
+          <a href="https://site-seers.herokuapp.com" target="_blank">
             <img
-              src="./assets/img/project/0.jpg"
+              src="./assets/img/project/siteseer.jpg"
               class="card-img-top"
               alt="website"
-            />
-            <div class="card-body">
-              <h5 class="card-title">SiteSeers</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">SiteSeers</h5>
+            <p class="card-text">
+              Team collaboration - MERN stack, Single-Page Application. AirBNB
+              for campsites.
+            </p>
           </div>
-
-          <div class="card">
-            <img
-              src="./assets/img/project/1.jpg"
-              class="card-img-top"
-              alt="websites"
-            />
-            <div class="card-body">
-              <h5 class="card-title">jokr</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="./assets/img/project/2.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Futurama Character Search</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="./assets/img/project/3.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Note-Taker</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="./assets/img/project/4.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Weather Dashboard</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="./assets/img/project/5.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Code-Quiz</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
+          <div>
+            <center><a href="https://github.com/roo116/SiteSeers" target="_blank"><i class="fa-brands fa-github"></i></a></center>
           </div>
         </div>
-      </section>
 
-      <!-- <section>
-        <div id="resume-section">
-          <h5>Skills</h5>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>JQuery</li>
-            <li>HandleBars</li>
-            <li>React</li>
-            <li>MySQL</li>
-            <li>Sequelize</li>
-            <li>REST APIs</li>
-            <li>MongoDB</li>
-            <li>mongoose</li>
-            <li>GraphQL</li>
-            <li>Scrum (CSM)</li>
-            <li>SaFE</li>
-            <li>Leadership</li>
-          </ul>
-
-          <div id="link-div">
-            <a
-              href="https://docs.google.com/document/d/e/2PACX-1vTzFpiPtLClTnhZyYY-DKrNH-FZ9fWSdl4YhFe45V8oK05tW8-066KhcwXtD9mTzAVRF-p9l7lfjSH7/pub"
-              target="_blank"
-              rel="noreferrer"
-              class="m-2 p-1"
-              id="resume-link"
-            >
-              Download Resume
-            </a>
+        <div class="card">
+          <a href="https://damp-bastion-89209.herokuapp.com/login" target="_blank">
+          <img
+            src="./assets/img/project/jokr.jpg"
+            class="card-img-top"
+            alt="website"
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">jokr</h5>
+            <p class="card-text">
+              Team collaboration utilizing MVC, with sequelize, mySql,
+              JawsDB/Heroku, express, node.js, handlebars. Site that provides
+              API for jokes.
+            </p>
           </div>
+          <div><center><a href="https://github.com/roo116/jokr" target="_blank"><i class="fa-brands fa-github"></i></a></center></div>
         </div>
-      </section> -->
 
-      <section id="contact-section"></section>
-    </main>
+        <div class="card">
+          <a href="https://roo116.github.io/character-search/" target="_blank"><img
+            src="./assets/img/project/futurama.jpg"
+            class="card-img-top"
+            alt="website"
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">Futurama Character Search</h5>
+            <p class="card-text">
+              Team collaboration utilizing materialize css, and API calls to
+              create a character-search app. Displays the voice-actors behind
+              the characters of Futurama, an animated TV series.
+            </p>
+          </div>
+          <div><center><a href="https://github.com/roo116/character-search" target="_blank"><i class="fa-brands fa-github"></i></a></center></div>
+        </div>
 
-    <footer>
+        <div class="card">
+          <a href="https://upper-mountie-24559.herokuapp.com/" target="_blank"><img
+            src="./assets/img/project/notes.jpg"
+            class="card-img-top"
+            alt="website"
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">Note-Taker</h5>
+            <p class="card-text">
+              Individual Project.  Note application. Utilizes express.js and published to Heroku.
+            </p>
+          </div>
+          <div><center><a href="https://github.com/roo116/note-taker" target="_blank"><i class="fa-brands fa-github"></i></a></center></div>
+        </div>
+
+        <div class="card">
+          <a href="https://roo116.github.io/weather-dashboard/" target="_blank">
+          <img
+            src="./assets/img/project/weather.jpg"
+            class="card-img-top"
+            alt="website"
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">Weather Dashboard</h5>
+            <p class="card-text">
+              Utilized BootStrap and Weather One api to create a weather
+              dashboard with realtime weather updates, at a click of a button.
+            </p>
+          </div>
+          <div><center><a href="https://github.com/roo116/weather-dashboard" target="_blank"><i class="fa-brands fa-github"></i></a></center></div>
+        </div>
+
+        <div class="card">
+          <a href="https://roo116.github.io/work-day-scheduler/" target="_blank">
+          <img
+            src="./assets/img/project/schedule.jpg"
+            class="card-img-top"
+            alt="..."
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">Work Day Scheduler</h5>
+            <p class="card-text">
+              Utilized JQuery, localStorage and Third-party utilities to create
+              a scheduling application.
+            </p>
+          </div>
+          <div><center><a href="https://github.com/roo116/work-day-scheduler" target="_blank"><i class="fa-brands fa-github"></i></a></center></div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact-section">
+      <h2>Get in touch!!!</h2>
       <ul class="nav">
-        <li>
-          <a href="https://linkedin.com/in/karlhill" target="_blank"></a>
-          <i class="fa-brands fa-linkedin"></i>
+        <li class="text-center m-2">
+          <a href="mailto:hillkarl03@gmail.com" class="nav-item"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
         </li>
-        <li>
+        <li class="text-center m-2">
+          <a href="https://linkedin.com/inkarlhill" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="text-center m-2">
           <a
             href="https://stackoverflow.com/users/18586610/chip-hill"
+            class="nav-item"
             target="_blank"
+            ><i class="fa-brands fa-stack-overflow"></i
           ></a>
-          <i class="fa-brands fa-stack-overflow"></i>
         </li>
-        <li>
-          <a href="https://github.com/roo116" target="_blank"></a>
-          <i class="fa-brands fa-github"></i>
+        <li class="text-center m-2">
+          <a href="https://github.com/roo116" target="_blank" class="nav-item"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </li>
       </ul>
     </footer>
-    <script
-      src="https://kit.fontawesome.com/98b873008c.js"
-      crossorigin="anonymous"
-    ></script>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
