@@ -109,10 +109,6 @@ ul {
   text-align: center;
 }
 
-.card-title:hover {
-  color: skyblue;
-}
-
 .card-body {
   height: 50%;
   font-family: "Fresca", sans-serif;
