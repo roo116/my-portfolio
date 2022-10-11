@@ -145,6 +145,8 @@ ul {
   font-family: "Fresca", sans-serif;
   font-size: small;
   opacity: 90%;
+  width: 80%;
+  margin: auto;
 }
 
 #photo-section {
