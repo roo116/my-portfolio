@@ -199,12 +199,12 @@ ul {
     /* margin: 15px; */
     margin: 3rem;
     width: 26rem;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
   }
 
   .card:hover {
     height: 33rem;
     width: 28rem;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
   }
 
   .proj-container {
