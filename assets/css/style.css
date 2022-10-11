@@ -84,6 +84,14 @@ ul {
   color: skyblue;
 }
 
+.proj-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 40px;
+}
+
 .card {
   margin: auto;
   margin-top: 10px;
@@ -98,10 +106,7 @@ ul {
   font-family: "Peralta", cursive;
   background-color: white;
   color: black;
-}
-
-.card-title:hover {
-  color: skyblue;
+  text-align: center;
 }
 
 .card-body {
@@ -122,16 +127,8 @@ ul {
   z-index: 2;
 }
 
-.form-input:focus {
-  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
-}
-
-.proj-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 40px;
+.gh-link {
+  margin-bottom: 5px;
 }
 
 /* id */
@@ -164,7 +161,6 @@ ul {
   margin-top: 5px;
   margin-bottom: 10%;
   color: black;
-  opacity: 95%;
 }
 
 #project-section h2 {
@@ -196,14 +192,20 @@ ul {
   }
 
   .card {
-    width: 30%;
-    margin: 15px;
+    /* margin: 15px; */
+    margin: 3rem;
+    width: 26rem;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .card:hover {
+    height: 33rem;
+    width: 28rem;
   }
 
   .proj-container {
     margin: auto;
-    background-color: #2c2d2e;
-    opacity: 95%;
+    background-color: rgba(44, 45, 46, 0.9);
   }
 
   #about-section {
@@ -211,14 +213,15 @@ ul {
   }
 
   #about-me-section {
-    font-size: 25px;
+    font-size: 15px;
+    width: 80vw;
+    margin: auto;
   }
 
   #project-section h2 {
     margin-bottom: 0;
     padding-top: 125px;
-    background-color: #2c2d2e;
-    opacity: 95px;
+    background-color: rgba(44, 45, 46, 0.9);
   }
 
   #contact-section {
@@ -237,18 +240,29 @@ ul {
     width: 25%;
   }
 
-  .card {
-    width: 30%;
-  }
-
   .proj-container {
     width: 100%;
     padding: 40px;
-    height: 80vh;
+    height: 40vh;
+  }
+
+  .card {
+    height: 28rem;
+    width: 22rem;
+  }
+
+  .card:hover {
+    height: 29rem;
+    width: 23rem;
   }
 
   #about-section {
-    padding-top: 220px;
+    padding-top: 8%;
+  }
+
+  #about-me-section {
+    width: 60%;
+    font-size: 25px;
   }
 
   #project-section h2 {
