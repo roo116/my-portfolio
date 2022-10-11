@@ -11,7 +11,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background-image: url("../img/porfolio-bw.jpg");
+  background-image: url("../img/portfolio-bw.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
@@ -22,12 +22,11 @@ body {
 header {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: none;
   font-family: "Peralta", cursive;
-  background-image: url("../img/porfolio-bw.jpg");
+  background-image: url("../img/portfolio-bw.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
@@ -48,6 +47,11 @@ footer {
   width: 100%;
 }
 
+footer i {
+  color: white;
+  text-decoration: none;
+}
+
 h1,
 h2 {
   font-family: "Peralta", cursive;
@@ -62,7 +66,7 @@ ul {
 }
 
 .hero {
-  background-image: url("../img/porfolio-bw.jpg");
+  background-image: url("../img/portfolio-bw.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 80%;
@@ -89,22 +93,42 @@ ul {
 }
 
 .card {
-  margin: 5px;
+  margin: auto;
+  margin-top: 10px;
   width: 20rem;
+  border: none;
+  border-radius: 0%;
+  height: 30rem;
 }
 
 .card-title {
+  text-decoration: none;
   font-family: "Peralta", cursive;
+  /* background-color: #c1c2c3; */
+  background-color: white;
+  color: black;
+}
+
+.card-title:hover {
+  color: skyblue;
 }
 
 .card-body {
   height: 50%;
-  border-top: black solid 2px;
   font-family: "Fresca", sans-serif;
+  background-color: white;
 }
 
 .card-img-top {
   width: 100%;
+}
+
+.card-text {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+  z-index: 2;
 }
 
 .form-input:focus {
@@ -112,8 +136,11 @@ ul {
 }
 
 .proj-container {
-  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   width: 100%;
+  padding: 40px;
 }
 
 #about-section {
@@ -125,6 +152,7 @@ ul {
   color: black;
   font-family: "Fresca", sans-serif;
   font-size: small;
+  opacity: 90%;
 }
 
 #photo-section {
@@ -142,18 +170,24 @@ ul {
 
 #contact-section {
   margin-top: 2%;
+  background-color: black;
+}
+
+#contact-section {
+  color: white;
 }
 
 #project-section {
   margin-top: 5px;
   margin-bottom: 10%;
   color: black;
+  opacity: 95%;
 }
 
 #project-section h2 {
-  background-color: white;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 10px;
+  padding-top: 45px;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -167,6 +201,13 @@ ul {
 
   .card {
     width: 30%;
+    margin: 15px;
+  }
+
+  .proj-container {
+    margin: auto;
+    background-color: #2c2d2e;
+    opacity: 95%;
   }
 
   #about-section {
@@ -177,26 +218,34 @@ ul {
     font-size: 25px;
   }
 
-  #project-section {
+  #project-section h2 {
+    margin-bottom: 0;
     padding-top: 125px;
+    background-color: #2c2d2e;
+    opacity: 95px;
   }
 }
 
 @media screen and (min-width: 2880px) {
-
   .nav {
     width: 25%;
   }
 
   .card {
-    width: 40%;
+    width: 30%;
+  }
+
+  .proj-container {
+    width: 100%;
+    padding: 40px;
+    height: 80vh;
   }
 
   #about-section {
     padding-top: 220px;
   }
 
-  #project-section {
-    padding-top: 220px;
+  #project-section h2 {
+    padding-top: 225px;
   }
 }
