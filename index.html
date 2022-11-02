@@ -1,205 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fresca&family=Peralta&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/98b873008c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <title>Chip Hill</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fresca&family=Peralta&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
-  <script src="https://kit.fontawesome.com/98b873008c.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
-  <title>Chip Hill</title>
-</head>
+  <body>
+    <header>
+      <h1>Chip Hill</h1>
+      <ul class="nav">
+        <li class="text-center m-2">
+          <a href="#about-section" class="nav-item">About</a>
+        </li>
+        <li class="text-center m-2">
+          <a href="#project-section" class="nav-item">Projects</a>
+        </li>
+        <li id="contact" class="text-center m-2">
+          <a href="#contact-section" class="nav-item">Contact</a>
+        </li>
+        <li class="text-center m-2">
+          <a
+            href="https://docs.google.com/document/d/1WgNHL5jSnWLFoRO9Diz8QSNp90636oGv3eGozxaXCqA/edit?usp=sharing"
+            class="nav-item"
+            target="_blank"
+            rel="noreferrer"
+            >Resume</a
+          >
+        </li>
+      </ul>
+    </header>
 
-<body>
-  <header>
-    <h1>Chip Hill</h1>
-    <ul class="nav">
-      <li class="text-center m-2">
-        <a href="#about-section" class="nav-item">About</a>
-      </li>
-      <li class="text-center m-2">
-        <a href="#project-section" class="nav-item">Projects</a>
-      </li>
-      <li id="contact" class="text-center m-2">
-        <a href="#contact-section" class="nav-item">Contact</a>
-      </li>
-      <li class="text-center m-2">
-        <a href=https://docs.google.com/document/d/1WgNHL5jSnWLFoRO9Diz8QSNp90636oGv3eGozxaXCqA/edit?usp=sharing
-          class="nav-item" target="_blank" rel="noreferrer">Resume</a>
-      </li>
-    </ul>
-  </header>
+    <section id="about-section">
+      <div id="photo-section">
+        <center>
+          <img
+            src="./assets/img/profile-pic-color.jpeg"
+            id="photo"
+            alt="developer"
+          />
+        </center>
+      </div>
 
+      <div
+        id="about-me-section"
+        class="d-flex col flex-wrap justify-content-center align-content-center"
+      >
+        <h1 id="about">About Me</h1>
+        <div class="flex-row space-around about-div">
+          <div class="mx-5">
+            <center>
+              <p id="about-text">
+                Hi! I'm a Web Developer with a background in Agile, IT
+                Operations, Staff Management and Process Improvement. I have
+                proven technical and leadership abilities and excellent
+                communication skills, written and verbal. I'm comfortable
+                working in both independent and team settings. I seek to
+                leverage my skills and background to create and design web
+                applications, and further my journey as a developer, while
+                helping companies achieve their goals.
+              </p>
+            </center>
+            <center>
+              <h2>Skills</h2>
+            </center>
+            <center>
+              <p>
+                HTML, CSS, JavaScript, JQuery, HandleBars, React, Node, Express,
+                REST APIs, MySQL, Sequelize, MongoDB, mongoose, GraphQL, Scrum
+                (CSM), SaFE, Leadership
+              </p>
+            </center>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="about-section">
-    <div id="photo-section">
+    <section id="project-section">
       <center>
-        <img src="./assets/img/profile-pic-color.jpeg" id="photo" alt="developer" />
+        <h2>Here are some of my projects</h2>
       </center>
-    </div>
-
-    <div id="about-me-section" class="d-flex col flex-wrap justify-content-center align-content-center">
-      <h1 id="about">About Me</h1>
-      <div class="flex-row space-around about-div">
-        <div class="mx-5">
-          <center>
-            <p id="about-text">
-              Hi! I'm a Web Developer with a background in Agile, IT
-              Operations, Staff Management and Process Improvement. I have
-              proven technical and leadership abilities and excellent
-              communication skills, written and verbal. I'm comfortable
-              working in both independent and team settings. I seek to
-              leverage my skills and background to create and design web
-              applications, and further my journey as a developer, while
-              helping companies achieve their goals.
+      <div class="proj-container">
+        <div class="card">
+          <a href="https://site-seers.herokuapp.com" target="_blank">
+            <img
+              src="./assets/img/project/siteseer.jpg"
+              class="card-img-top"
+              alt="website"
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">SiteSeers</h5>
+            <p class="card-text">
+              Team collaboration - MERN stack, Single-Page Application. AirBNB
+              for campsites.
             </p>
-          </center>
-          <center>
-            <h2>Skills</h2>
-          </center>
-          <center>
-            <p>
-              HTML, CSS, JavaScript, JQuery, HandleBars, React, Node, Express,
-              REST APIs, MySQL, Sequelize, MongoDB, mongoose, GraphQL, Scrum
-              (CSM), SaFE, Leadership
+          </div>
+          <div class="gh-link">
+            <center>
+              <a href="https://github.com/roo116/SiteSeers" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </center>
+          </div>
+        </div>
+
+        <div class="card">
+          <a
+            href="https://damp-bastion-89209.herokuapp.com/login"
+            target="_blank"
+          >
+            <img
+              src="./assets/img/project/jokr.jpg"
+              class="card-img-top"
+              alt="website"
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">jokr</h5>
+            <p class="card-text">
+              Team collaboration utilizing MVC, with sequelize, mySql,
+              JawsDB/Heroku, express, node.js, handlebars. Site that provides
+              API for jokes.
             </p>
-          </center>
+          </div>
+          <div class="gh-link">
+            <center>
+              <a href="https://github.com/roo116/jokr" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </center>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="https://roo116.github.io/character-search/" target="_blank"
+            ><img
+              src="./assets/img/project/futurama.jpg"
+              class="card-img-top"
+              alt="website"
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">Futurama Character Search</h5>
+            <p class="card-text">
+              Team collaboration - Third-party API calls to create a
+              character-search app. Displays the voice-actors behind the
+              characters of Futurama, an animated TV series.
+            </p>
+          </div>
+          <div class="gh-link">
+            <center>
+              <a
+                href="https://github.com/roo116/character-search"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </center>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="https://upper-mountie-24559.herokuapp.com/" target="_blank"
+            ><img
+              src="./assets/img/project/notes.jpg"
+              class="card-img-top"
+              alt="website"
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">Note-Taker</h5>
+            <p class="card-text">
+              Individual Project. Note application. Utilizes express.js and
+              published to Heroku.
+            </p>
+          </div>
+          <div class="gh-link">
+            <center>
+              <a href="https://github.com/roo116/note-taker" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </center>
+          </div>
+        </div>
+
+        <div class="card">
+          <a href="https://roo116.github.io/weather-dashboard/" target="_blank">
+            <img
+              src="./assets/img/project/weather.jpg"
+              class="card-img-top"
+              alt="website"
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">Weather Dashboard</h5>
+            <p class="card-text">
+              Utilized BootStrap and Weather One api to create a weather
+              dashboard with realtime weather updates, at a click of a button.
+            </p>
+          </div>
+          <div class="gh-link">
+            <center>
+              <a
+                href="https://github.com/roo116/weather-dashboard"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </center>
+          </div>
+        </div>
+
+        <div class="card">
+          <a
+            href="https://roo116.github.io/work-day-scheduler/"
+            target="_blank"
+          >
+            <img
+              src="./assets/img/project/schedule.jpg"
+              class="card-img-top"
+              alt="website"
+          /></a>
+          <div class="card-body">
+            <h5 class="card-title">Work Day Scheduler</h5>
+            <p class="card-text">
+              Utilized JQuery, localStorage and Third-party utilities to create
+              a scheduling application.
+            </p>
+          </div>
+          <div class="gh-link">
+            <center>
+              <a
+                href="https://github.com/roo116/work-day-scheduler"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </center>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="project-section">
-    <center>
-      <h2>Here are some of my projects</h2>
-    </center>
-    <div class="proj-container">
-      <div class="card">
-        <a href="https://site-seers.herokuapp.com" target="_blank">
-          <img src="./assets/img/project/siteseer.jpg" class="card-img-top" alt="website" /></a>
-        <div class="card-body">
-          <h5 class="card-title">SiteSeers</h5>
-          <p class="card-text">
-            Team collaboration - MERN stack, Single-Page Application. AirBNB
-            for campsites.
-          </p>
-        </div>
-        <div class="gh-link">
-          <center><a href="https://github.com/roo116/SiteSeers" target="_blank"><i class="fa-brands fa-github"></i></a>
-          </center>
-        </div>
-      </div>
-
-      <div class="card">
-        <a href="https://damp-bastion-89209.herokuapp.com/login" target="_blank">
-          <img src="./assets/img/project/jokr.jpg" class="card-img-top" alt="website" /></a>
-        <div class="card-body">
-          <h5 class="card-title">jokr</h5>
-          <p class="card-text">
-            Team collaboration utilizing MVC, with sequelize, mySql,
-            JawsDB/Heroku, express, node.js, handlebars. Site that provides
-            API for jokes.
-          </p>
-        </div>
-        <div class="gh-link">
-          <center><a href="https://github.com/roo116/jokr" target="_blank"><i class="fa-brands fa-github"></i></a>
-          </center>
-        </div>
-      </div>
-
-      <div class="card">
-        <a href="https://roo116.github.io/character-search/" target="_blank"><img
-            src="./assets/img/project/futurama.jpg" class="card-img-top" alt="website" /></a>
-        <div class="card-body">
-          <h5 class="card-title">Futurama Character Search</h5>
-          <p class="card-text">
-            Team collaboration - Third-party API calls to create a character-search app. Displays the voice-actors
-            behind
-            the characters of Futurama, an animated TV series.
-          </p>
-        </div>
-        <div class="gh-link">
-          <center><a href="https://github.com/roo116/character-search" target="_blank"><i
-                class="fa-brands fa-github"></i></a></center>
-        </div>
-      </div>
-
-      <div class="card">
-        <a href="https://upper-mountie-24559.herokuapp.com/" target="_blank"><img src="./assets/img/project/notes.jpg"
-            class="card-img-top" alt="website" /></a>
-        <div class="card-body">
-          <h5 class="card-title">Note-Taker</h5>
-          <p class="card-text">
-            Individual Project. Note application. Utilizes express.js and published to Heroku.
-          </p>
-        </div>
-        <div class="gh-link">
-          <center><a href="https://github.com/roo116/note-taker" target="_blank"><i class="fa-brands fa-github"></i></a>
-          </center>
-        </div>
-      </div>
-
-      <div class="card">
-        <a href="https://roo116.github.io/weather-dashboard/" target="_blank">
-          <img src="./assets/img/project/weather.jpg" class="card-img-top" alt="website" /></a>
-        <div class="card-body">
-          <h5 class="card-title">Weather Dashboard</h5>
-          <p class="card-text">
-            Utilized BootStrap and Weather One api to create a weather
-            dashboard with realtime weather updates, at a click of a button.
-          </p>
-        </div>
-        <div class="gh-link">
-          <center><a href="https://github.com/roo116/weather-dashboard" target="_blank"><i
-                class="fa-brands fa-github"></i></a></center>
-        </div>
-      </div>
-
-      <div class="card">
-        <a href="https://roo116.github.io/work-day-scheduler/" target="_blank">
-          <img src="./assets/img/project/schedule.jpg" class="card-img-top" alt="website" /></a>
-        <div class="card-body">
-          <h5 class="card-title">Work Day Scheduler</h5>
-          <p class="card-text">
-            Utilized JQuery, localStorage and Third-party utilities to create
-            a scheduling application.
-          </p>
-        </div>
-        <div class="gh-link">
-          <center><a href="https://github.com/roo116/work-day-scheduler" target="_blank"><i
-                class="fa-brands fa-github"></i></a></center>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer id="contact-section">
-    <h2>Get in touch!!!</h2>
-    <ul class="nav">
-      <li class="text-center m-2">
-        <a href="mailto:hillkarl03@gmail.com" class="nav-item"><i class="fa-regular fa-envelope"></i></a>
-      </li>
-      <li class="text-center m-2">
-        <a href="https://linkedin.com/inkarlhill" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      </li>
-      <li class="text-center m-2">
-        <a href="https://stackoverflow.com/users/18586610/chip-hill" class="nav-item" target="_blank"><i
-            class="fa-brands fa-stack-overflow"></i></a>
-      </li>
-      <li class="text-center m-2">
-        <a href="https://github.com/roo116" target="_blank" class="nav-item"><i class="fa-brands fa-github"></i></a>
-      </li>
-    </ul>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="./assets/js/script.js"></script>
-</body>
-
+    <footer id="contact-section">
+      <h2>Get in touch!!!</h2>
+      <ul class="nav">
+        <li class="text-center m-2">
+          <a href="mailto:hillkarl03@gmail.com"
+            ><i class="fa-regular fa-envelope nav-item"></i
+          ></a>
+        </li>
+        <li class="text-center m-2">
+          <a href="https://linkedin.com/in/karlhill" target="_blank"
+            ><i class="fa-brands fa-linkedin nav-item"></i
+          ></a>
+        </li>
+        <li class="text-center m-2">
+          <a
+            href="https://stackoverflow.com/users/18586610/chip-hill"
+            target="_blank"
+            ><i class="fa-brands fa-stack-overflow nav-item"></i
+          ></a>
+        </li>
+        <li class="text-center m-2">
+          <a href="https://github.com/roo116" target="_blank"
+            ><i class="fa-brands fa-github nav-item"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
